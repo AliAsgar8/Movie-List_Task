@@ -14,7 +14,7 @@ a {
 }
 
 
-.caveat{
+.caveat {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: bold;
@@ -23,10 +23,10 @@ a {
 
 
 
-.quicksand{
+.quicksand {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight:bold;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -284,6 +284,7 @@ a {
 
 .movie-type {
   padding-bottom: 10px;
+  line-height: 2;
 }
 
 .duration {
@@ -348,7 +349,7 @@ a {
   border-radius: 5px;
 }
 
-.members{
+.members {
   width: 210px;
 }
 
@@ -432,6 +433,16 @@ a {
 }
 
 @media(max-width:426px) {
+
+  .navbar {
+    padding: 25px 40px;
+  }
+
+  .member-img {
+    height: 250px;
+    width: 200px;
+  }
+
   /* ---------------full-movie-description---------------------- */
 
   .img-and-content {
@@ -460,4 +471,3 @@ a {
     width: 30%;
   }
 }
-

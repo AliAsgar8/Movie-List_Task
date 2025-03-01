@@ -37,7 +37,7 @@ const PopularMovies = () => {
               <div className="movie-img">
                 <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
               </div>
-              <div className="title">{movie.title}</div>
+              <div className="title quicksand">{movie.title}</div>
               <div className="rating">⭐ {movie.vote_average || "N/A"}</div>
             </div>
           ))}

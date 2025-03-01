@@ -38,7 +38,7 @@ const MovieDetailPage = () => {
 
             {/*  Right Side - Movie Details */}
             <div className="right-movie-content">
-              <h1>{movieDetails.title}</h1>
+              <h1 className="caveat">{movieDetails.title}</h1>
               <p className="ratings">⭐ Rating: {movieDetails.vote_average || "N/A"}</p>
               <p className="movie-type">
                 <span className="duration">{movieDetails.runtime || "N/A"} min</span>{" "}

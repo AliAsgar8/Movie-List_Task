@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* --------------------------------NAVBAR------------------------------- */
+
+.navbar {
+  background-color: rgb(52 58 63);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+}
+
+.nav-logo {
+  font-size: 30px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.nav-lists {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: grey;
+}
+
+.nav-list li a:hover {
+  color: white;
+}
+
+.nav-input {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-input input {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.nav-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-lists li a.active,
+.responsive-list li a.active {
+  color: white;
+  background-color: grey;
+  padding: 6px 6px;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+
+
+/* ------------------------Responsive Navbar--------------------- */
+
+.responsive-navbar {
+  height: 100vh;
+  width: 50%;
+  background-color: rgb(52 58 63);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+
+.responsive-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 90px;
+}
+
+.responsive-input {
+  display: flex;
+  justify-content: center;
+}
+
+.close-btn {
+  text-align: end;
+  font-size: 25px;
+  padding: 3px 20px 30px 0px;
+}
+
+.popular-link {
+  color: white;
+}
+
+
+.responsive-nav-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0px 20px;
+}
+
+.responsive-nav-input input {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.responsive-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-nav-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+
+
+.open {
+  transform: translateX(0%);
+  transition: all 1s ease-in-out;
+}
+
+.close {
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+}
+
+
+
+
+/* --------------------------Popular------------------------ */
+
+.all-list-movies {
+  background-color: rgb(40 44 51);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-popular-cards {
+  background-color: rgb(40 44 51);
+  color: rgb(244 244 245);
+  padding: 70px 50px;
+  display: flex;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  text-align: center;
+  cursor: pointer;
+  width: 210px;
+}
+
+.movie-img {
+  height: 280px;
+  width: 200px;
+}
+
+.movie-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-card:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.title {
+  padding: 10px 0px;
+}
+
+.rating {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+
+/* ----------------------MovieDetailPage-------------------- */
+
+.full-movie-description {
+  background-color: rgb(40 44 51);
+  padding: 20px 50px;
+}
+
+.about-movie {
+  background-color: rgb(1 11 22);
+  color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.movie-description {
+  width: 50%;
+}
+
+.img-and-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.left-movie-img {
+  height: 200px;
+  width: 150px;
+}
+
+.left-movie-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.right-movie-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ratings {
+  padding: 10px 0px;
+  font-size: 20px;
+  color: rgb(170, 170, 243);
+}
+
+.movie-type {
+  padding-bottom: 10px;
+}
+
+.duration {
+  border: 1px solid grey;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.release-date {
+  color: grey;
+}
+
+.overview {
+  font-size: 30px;
+  padding: 30px 0px 20px 0px;
+}
+
+.detail {
+  color: grey;
+  padding: 0px 20px 0px 0px;
+}
+
+.movie-image {
+  height: 340px;
+  width: 50%;
+}
+
+.movie-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ------------------------------Cast------------------------ */
+.all-cast {
+  color: white;
+  padding-top: 30px;
+}
+
+.all-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.cast {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.member-img {
+  height: 290px;
+  width: 210px;
+}
+
+.member-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.members{
+  width: 210px;
+}
+
+.name {
+  font-size: 18px;
+  padding: 5px 0px;
+}
+
+.character {
+  font-size: 15px;
+}
+
+
+
+/* -------------------------------------Pagination------------------------------ */
+
+.pagination-btn {
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #ff4500;
+  color: white;
+  transform: scale(1.1);
+}
+
+.pagination-btn:active {
+  transform: scale(0.95);
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+/* --------------------------------Responsive-Design---------------------------------- */
+
+@media(max-width:1025px) {
+
+  /* ---------------full-movie-description---------------------- */
+  .about-movie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movie-description {
+    width: 100%;
+  }
+
+  .movie-image {
+    width: 100%;
+  }
+
+  .full-movie-description {
+    padding: 20px;
+  }
+}
+
+
+
+@media(max-width:850px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media(max-width:426px) {
+  /* ---------------full-movie-description---------------------- */
+
+  .img-and-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-movie-content {
+    gap: 2px;
+  }
+
+  .right-movie-content h1 {
+    font-size: 20px;
+  }
+
+
+  .responsive-navbar {
+    width: 100%;
+  }
+
+  .responsive-nav-input input {
+    width: 70%;
+  }
+
+  .responsive-btn button {
+    width: 30%;
+  }
+}
+
